@@ -2,7 +2,8 @@
 NYC taxi data analysis using Hadoop Map-Reduce programming
 
 # Introduction:
-NYC Taxi & Limousine Commission data is available for yellow, green and FHV taxi data set, this data set is freely availabe for analysis, This taxi records includes the user pickup location time, drop time, distance, number of passanger, payment type, fares and altitude of location. I am taking year 2009 data for analysis for all 12 moths data. Average number of passanger, distance per trip in general, par day , during the week ends or week days or per hour is done using the map reduce jobs. This reports includes requirement, challanges and fix.
+NYC Taxi & Limousine Commission data is available for yellow, green and FHV taxi data set, this data 
+set is freely availabe for analysis, This taxi records includes the user pickup location time, drop time, distance, number of passanger, payment type, fares and altitude of location. I am taking year 2009 data for analysis for all 12 moths data. Average number of passanger, distance per trip in general, par day , during the week ends or week days or per hour is done using the map reduce jobs. This reports includes requirement, challanges and fix.
 
 # Requirement: Analyze “NYC Taxi & Limousine Commission” yellow trips data.
 
@@ -50,4 +51,8 @@ hadoop fs -cat /ques1output/part-r-00000
 
 # Conclusions: 
 
-Average distance in night During the weekdays is high and low for weekends and average distance during the day or till midnight for weekends is high but for weekdays is low. Average distance in general, is almost similar to the average distance during the weekday.Another study for an average passenger on weekend is high compared to the Average passenger in general or average passenger weekdays. We can also conclude that average passenger in General, is higher than average passenger weekdays. Most of the transaction is done using a credit card and some passenger is doing their payment by cash. Cloud is good for adding the new machine in the cluster and easy to change the size of machine and data disk, because of lack of sources, I am not able to add all 8 years data for analysis but data is inserted for all 8 years.
+Average distance in night During the weekdays is high and low for weekends and average distance during the day or till midnight for weekends is high but for weekdays is low. Average distance in general, is almost similar to the average distance during the weekday.Another study for an average passenger on weekend is high compared to the Average passenger in general or average passenger weekdays. We can also conclude that average passenger in General, is higher than average passenger 
+weekdays. Most of the transaction is done using a credit card and some passenger is doing their 
+payment by cash. Cloud is good for adding the new machine in the cluster and easy to change the size
+of machine and data disk, because of lack of sources, I am not able to add all 8 years data for analysis 
+but data is inserted for all 8 years.
