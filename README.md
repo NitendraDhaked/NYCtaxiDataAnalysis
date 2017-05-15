@@ -16,19 +16,33 @@ Format of CSV file
 vendor_name,Trip_Pickup_DateTime,Trip_Dropoff_DateTime,Passenger_Count,Trip_Distance,Sta rt_Lon,Start_Lat,Rate_Code,store_and_forward,End_Lon,End_Lat,Payment_Type,Fare_Amt,surch arge,mta_tax,Tip_Amt,Tolls_Amt,Total_Amt
 
 # Script for Data Download
-#!/bin/bash 
-months=( "01" "02" "03" "04" "05" "06" "07" "08" "09" "10" "11" "12" ); 
-colors=( ""yellow"); 
+
+#!/bin/bash
+
+months=( "01" "02" "03" "04" "05" "06" "07" "08" "09" "10" "11" "12" );
+
+colors=( ""yellow");
+
 for year in {2009..2010}
-do 
+
+do
+
 for month in "${months[@]}" 
+
 do 
+
 for color in "${colors[@]}" 
+
 do 
+
 wget "https://s3.amazonaws.com/nyc­ data/"$color"_tripdata_"$year"­"$month".csv"; 
+
 done 
+
 done 
+
 done
+
 # How to execute
 1. Run analysis for each question
 hadoop jar jarname <Main class> <Input path directory>  <output path directory>
@@ -74,6 +88,9 @@ of machine and data disk, because of lack of sources, I am not able�
 but data is inserted for all 8 years.
 
 # Technology used
+
 Azure Cloud
+
 Cluster Setup using Virtual Machines
+
 Map-Reduce in Java
